@@ -1,0 +1,55 @@
+.chart-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 300px;
+    width: 80%;
+    margin: 50px auto;
+    background-color: #f4f4f4;
+    border: 2px solid #ccc;
+    padding: 10px;
+}
+
+/* Styling for individual bars */
+.bar {
+    width: 50px;
+    background-color: #3498db;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transition: background-color 0.3s ease;
+}
+
+/* Add hover effect to bars */
+.bar:hover {
+    background-color: #2ecc71;
+}
+.chart-container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 300px;
+    width: 80%;
+    margin: 50px auto;
+    background-color: #f4f4f4;
+    border: 2px solid #ccc;
+    padding: 10px;
+    background: linear-gradient(transparent 24px, #ccc 25px);
+    background-size: 100% 50px;
+}
+
+/* Optional grid line labels (percentage labels on the left side) */
+.chart-container:before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background: repeating-linear-gradient(to bottom, transparent 0, transparent 50px, #ccc 50px, #ccc 51px);
+}
